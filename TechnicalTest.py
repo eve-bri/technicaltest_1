@@ -11,7 +11,7 @@ def WordSplit(strArr):
     for index in range(len(strArr[0])):
         if (strArr[0][:index] in dictionaryWord and 
             strArr[0][index:] in dictionaryWord):
-            outPut = strArr[0][:index] + "," + strArr[0][index:]
+            outPut = f'{strArr[0][:index]},{strArr[0][index:]}'
             break
     return outPut
 
